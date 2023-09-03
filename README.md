@@ -17,7 +17,7 @@ Define el ancho del trazado
 ### .arc(250,250,80,0,Math.PI*2 )
 define un arco, posicion en x:250, en y:250, radio:80, inicio de trazado, fin de trazado
 
-### stroke
+### --stroke--
 permite el dibujo
 
 ***
