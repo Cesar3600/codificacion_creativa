@@ -65,4 +65,49 @@ las matrices son un conjunto de valores agrupados
 
 
 
+```
+for(let i = 0;i < 5; i++){
+  for(let j = 0;j < 5; j++){
+    let width = 60;
+    let height = 60;
+    let gap = 20;
+    let x = 100 +  (width + gap) * i;
+    let y = 100 +  (width + gap) * j;
+  
+    context.beginPath();
+    context.rect(x,y,width,height);
+    context.stroke();
+    if(i==4 || i==0 || j==0 || j==4){
+      context.beginPath()
+      context.rect(x+8,y+8,width-16,height-16)
+      context.stroke()
+    }
 
+  }
+}
+
+```
+
+tambien podemos agregar el random al diseno
+
+```
+for(let i = 0;i < 5; i++){
+  for(let j = 0;j < 5; j++){
+    let width = 60;
+    let height = 60;
+    let gap = 20;
+    let x = 100 +  (width + gap) * i;
+    let y = 100 +  (width + gap) * j;
+  
+    context.beginPath();
+    context.rect(x,y,width,height);
+    context.stroke();
+    if(Math.random() > 0.5){
+      context.beginPath()
+      context.rect(x+8,y+8,width-16,height-16)
+      context.stroke()
+    }
+
+  }
+}
+```
