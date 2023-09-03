@@ -2,11 +2,10 @@
 # CODIFICACION CREATIVA
 
 
-
 ## VARIABLES AND FUNCTIONS
 Estamos repasando la estructura interna de un archivo html
 
-### beginPath()
+### ---beginPath()---
 Inicia el proceso de grafico
 
 ### StrokeStyle
@@ -29,3 +28,12 @@ permite el dibujo
     context.arc(250,250,80,0,Math.PI*2 )
     context.stroke();
 ```
+
+
+## MATRICES Y BUCLES
+
+las matrices son un conjunto de valores agrupados
+
+
+
+
