@@ -46,5 +46,40 @@
   context.stroke()
 
 
+  // About arrays
+
+
+for(let i = 0;i < 5; i++){
+  for(let j = 0;j < 5; j++){
+    let width = 60;
+    let height = 60;
+    let gap = 20;
+    let x = 100 +  (width + gap) * i;
+    let y = 100 +  (width + gap) * j;
+
+    console.log("x",x)
+  
+    context.beginPath();
+    context.lineWidth = 3;
+    context.strokeStyle = 'black';
+    context.rect(x,y,width,height);
+    context.stroke();
+    if(i==4 || i==0 || j==0 || j==4){
+      context.beginPath()
+      context.fillStyle='red'
+      context.fillRect(x+8,y+8,width-16,height-16)
+      context.rect(x+8,y+8,width-16,height-16)
+      context.fillStyle='green'
+      context.fillRect(x+16,y+16,width-32,height-32)
+      context.rect(x+16,y+16,width-32,height-32)
+      context.rect(x+32,y+32,width-64,height-64)
+      context.stroke()
+    }
+
+  }
+}
+
+
+
 </script>
 </html>
